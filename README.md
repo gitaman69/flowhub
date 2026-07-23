@@ -12,6 +12,7 @@ FlowKit is 15 small, independently publishable packages — `sms`, `email`, `oau
 
 ## Table of Contents
 
+- [Try it in 60 seconds](#try-it-in-60-seconds)
 - [The problem](#the-problem)
 - [Architecture](#architecture)
 - [Before / After](#before--after)
@@ -29,6 +30,48 @@ FlowKit is 15 small, independently publishable packages — `sms`, `email`, `oau
 - [Contributing](#contributing)
 - [Changelog](#changelog)
 - [License](#license)
+
+## Try it in 60 seconds
+
+Real terminal output, `@flowhub/cli@0.0.3` against the packages actually published on npm:
+
+```console
+$ npm add -g @flowhub/cli
+added 3 packages in 2s
+
+$ flowkit init my-app
+  create  my-app/package.json
+  create  my-app/index.js
+  create  my-app/.gitignore
+
+Next steps:
+  cd my-app
+  npm install
+  npm start
+
+$ cd my-app && npm install
+added 3 packages, and audited 4 packages in 4s
+found 0 vulnerabilities
+
+$ flowkit add twilio
+  update  package.json (+@flowhub/sms)
+
+Run "npm install", then:
+
+  import { SmsRegistry } from "@flowhub/sms";
+
+  const sms = new SmsRegistry(app.events);
+  sms.register({ name: "twilio", /* implement the provider */ });
+
+$ npm install && npm start
+> my-app@0.0.1 start
+> node index.js
+
+FlowKit app ready
+Run "flowkit add <provider>" to wire up sms, email, oauth, storage, webhook, queue, or cache.
+```
+
+`flowkit add <provider>` recognizes providers across every module — `twilio`/`msg91`/`sns`/`vonage`/`textlocal` (sms), `resend`/`sendgrid`/`smtp`/`mailgun`/`ses` (email), `google`/`github`/`microsoft` (oauth), `s3`/`cloudinary`/`gcs`/`azure-blob`/`minio` (storage), `stripe` (webhook), `bullmq`/`rabbitmq`/`sqs` (queue), `redis`/`lru` (cache) — and tells you which module it wired in if you pass one it doesn't recognize. Full command reference: [`@flowhub/cli` README](packages/cli/README.md).
 
 ## The problem
 

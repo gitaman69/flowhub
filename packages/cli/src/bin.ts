@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 import { createProgram } from "./index.js";
+import { addProviderToProject, initProject } from "./scaffold.js";
 
 const program = createProgram({
   init(dir) {
-    console.log(`flowkit: scaffolding new project in "${dir}"`);
+    return initProject(dir);
   },
   addProvider(provider) {
-    console.log(`flowkit: adding provider "${provider}"`);
+    return addProviderToProject(provider, process.cwd());
   },
 });
 

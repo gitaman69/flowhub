@@ -2,6 +2,12 @@
 
 All notable changes to the `@flowhub/*` packages are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions are per-package but released together while the toolkit is pre-1.0.
 
+## [0.0.3] - 2026-07-23
+
+### Fixed
+
+- `@flowhub/cli` — `flowkit init` and `flowkit add <provider>` were no-ops (logged a message, wrote nothing). `init` now scaffolds a real `package.json`/`index.js`/`.gitignore`; `add <provider>` now adds the correct `@flowhub/*` dependency and prints a wiring snippet.
+
 ## [0.0.2] - 2026-07-23
 
 Version bump for the original 15 packages (`core` through `cache`) to carry the changes below onto their npm registry pages.
