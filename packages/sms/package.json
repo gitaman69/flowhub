@@ -3,6 +3,15 @@
   "version": "0.0.1",
   "description": "Provider-agnostic SMS (Twilio, MSG91, AWS SNS, Vonage, Textlocal).",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitaman69/flowhub.git",
+    "directory": "packages/sms"
+  },
+  "homepage": "https://github.com/gitaman69/flowhub/tree/main/packages/sms#readme",
+  "bugs": {
+    "url": "https://github.com/gitaman69/flowhub/issues"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

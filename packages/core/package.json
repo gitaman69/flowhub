@@ -3,6 +3,15 @@
   "version": "0.0.1",
   "description": "FlowKit core: configuration, lifecycle, plugin loading, dependency injection, events.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitaman69/flowhub.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/gitaman69/flowhub/tree/main/packages/core#readme",
+  "bugs": {
+    "url": "https://github.com/gitaman69/flowhub/issues"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

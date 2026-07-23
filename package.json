@@ -3,6 +3,14 @@
   "private": true,
   "version": "0.0.1",
   "description": "FlowKit monorepo root",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitaman69/flowhub.git"
+  },
+  "homepage": "https://github.com/gitaman69/flowhub#readme",
+  "bugs": {
+    "url": "https://github.com/gitaman69/flowhub/issues"
+  },
   "type": "module",
   "packageManager": "pnpm@11.1.2",
   "engines": {
