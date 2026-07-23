@@ -2,6 +2,16 @@
   "name": "@flowhub/otp",
   "version": "0.0.1",
   "description": "OTP generation, verification, expiry, resend, and cooldown.",
+  "keywords": [
+    "otp",
+    "2fa",
+    "mfa",
+    "one-time-password",
+    "verification-code",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

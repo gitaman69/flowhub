@@ -2,6 +2,16 @@
   "name": "@flowhub/queue",
   "version": "0.0.1",
   "description": "Provider-agnostic job queue (BullMQ, RabbitMQ, Redis, SQS).",
+  "keywords": [
+    "queue",
+    "job-queue",
+    "bullmq",
+    "background-jobs",
+    "task-queue",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

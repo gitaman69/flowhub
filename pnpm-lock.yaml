@@ -138,6 +138,67 @@ importers:
         specifier: ^2.0.0
         version: 2.1.9(@types/node@20.19.43)
 
+  packages/flowhub:
+    dependencies:
+      '@flowhub/cache':
+        specifier: workspace:*
+        version: link:../cache
+      '@flowhub/cli':
+        specifier: workspace:*
+        version: link:../cli
+      '@flowhub/config':
+        specifier: workspace:*
+        version: link:../config
+      '@flowhub/core':
+        specifier: workspace:*
+        version: link:../core
+      '@flowhub/email':
+        specifier: workspace:*
+        version: link:../email
+      '@flowhub/errors':
+        specifier: workspace:*
+        version: link:../errors
+      '@flowhub/express':
+        specifier: workspace:*
+        version: link:../express
+      '@flowhub/logger':
+        specifier: workspace:*
+        version: link:../logger
+      '@flowhub/oauth':
+        specifier: workspace:*
+        version: link:../oauth
+      '@flowhub/otp':
+        specifier: workspace:*
+        version: link:../otp
+      '@flowhub/queue':
+        specifier: workspace:*
+        version: link:../queue
+      '@flowhub/retry':
+        specifier: workspace:*
+        version: link:../retry
+      '@flowhub/sms':
+        specifier: workspace:*
+        version: link:../sms
+      '@flowhub/storage':
+        specifier: workspace:*
+        version: link:../storage
+      '@flowhub/webhook':
+        specifier: workspace:*
+        version: link:../webhook
+    devDependencies:
+      '@types/node':
+        specifier: ^20.14.0
+        version: 20.19.43
+      tsup:
+        specifier: ^8.0.0
+        version: 8.5.1(postcss@8.5.21)(typescript@5.9.3)
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.9(@types/node@20.19.43)
+
   packages/logger:
     devDependencies:
       '@types/node':

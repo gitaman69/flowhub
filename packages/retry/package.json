@@ -2,6 +2,16 @@
   "name": "@flowhub/retry",
   "version": "0.0.1",
   "description": "Retry helper with backoff for FlowKit packages.",
+  "keywords": [
+    "retry",
+    "backoff",
+    "exponential-backoff",
+    "resilience",
+    "fault-tolerance",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

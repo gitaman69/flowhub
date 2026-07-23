@@ -2,6 +2,17 @@
   "name": "@flowhub/oauth",
   "version": "0.0.1",
   "description": "Provider-agnostic OAuth: Google, GitHub, Microsoft. PKCE, state, refresh tokens.",
+  "keywords": [
+    "oauth",
+    "oauth2",
+    "authentication",
+    "sso",
+    "google-oauth",
+    "github-oauth",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

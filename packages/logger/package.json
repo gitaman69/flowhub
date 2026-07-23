@@ -2,6 +2,14 @@
   "name": "@flowhub/logger",
   "version": "0.0.1",
   "description": "Minimal leveled logger for FlowKit packages.",
+  "keywords": [
+    "logger",
+    "logging",
+    "structured-logging",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

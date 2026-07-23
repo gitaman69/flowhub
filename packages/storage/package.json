@@ -2,6 +2,17 @@
   "name": "@flowhub/storage",
   "version": "0.0.1",
   "description": "Provider-agnostic object storage (S3, Cloudinary, Google Cloud, Azure Blob, MinIO).",
+  "keywords": [
+    "s3",
+    "object-storage",
+    "file-upload",
+    "cloud-storage",
+    "cloudinary",
+    "azure-blob",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

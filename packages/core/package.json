@@ -2,6 +2,15 @@
   "name": "@flowhub/core",
   "version": "0.0.1",
   "description": "FlowKit core: configuration, lifecycle, plugin loading, dependency injection, events.",
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "event-bus",
+    "dependency-injection",
+    "plugin-system",
+    "app-framework",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

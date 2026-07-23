@@ -2,6 +2,16 @@
   "name": "@flowhub/sms",
   "version": "0.0.1",
   "description": "Provider-agnostic SMS (Twilio, MSG91, AWS SNS, Vonage, Textlocal).",
+  "keywords": [
+    "sms",
+    "twilio",
+    "otp",
+    "messaging",
+    "notifications",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

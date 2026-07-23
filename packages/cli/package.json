@@ -2,6 +2,15 @@
   "name": "@flowhub/cli",
   "version": "0.0.1",
   "description": "flowkit CLI: init and add <provider> scaffolding commands.",
+  "keywords": [
+    "cli",
+    "scaffolding",
+    "commander",
+    "code-generator",
+    "developer-tools",
+    "nodejs",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

@@ -1,12 +1,13 @@
 {
-  "name": "@flowhub/webhook",
+  "name": "@flowhub/flowhub",
   "version": "0.0.1",
-  "description": "Webhook signature verification, retries, and logging.",
+  "description": "One-install convenience bundle re-exporting every @flowhub/* package.",
   "keywords": [
-    "webhook",
-    "signature-verification",
-    "stripe-webhook",
-    "event-driven",
+    "backend-toolkit",
+    "toolkit",
+    "monorepo",
+    "sdk",
+    "provider-agnostic",
     "nodejs",
     "typescript",
     "flowhub"
@@ -15,9 +16,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gitaman69/flowhub.git",
-    "directory": "packages/webhook"
+    "directory": "packages/flowhub"
   },
-  "homepage": "https://github.com/gitaman69/flowhub/tree/main/packages/webhook#readme",
+  "homepage": "https://github.com/gitaman69/flowhub/tree/main/packages/flowhub#readme",
   "bugs": {
     "url": "https://github.com/gitaman69/flowhub/issues"
   },
@@ -44,8 +45,21 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@flowhub/cache": "workspace:*",
+    "@flowhub/cli": "workspace:*",
+    "@flowhub/config": "workspace:*",
     "@flowhub/core": "workspace:*",
-    "@flowhub/errors": "workspace:*"
+    "@flowhub/email": "workspace:*",
+    "@flowhub/errors": "workspace:*",
+    "@flowhub/express": "workspace:*",
+    "@flowhub/logger": "workspace:*",
+    "@flowhub/oauth": "workspace:*",
+    "@flowhub/otp": "workspace:*",
+    "@flowhub/queue": "workspace:*",
+    "@flowhub/retry": "workspace:*",
+    "@flowhub/sms": "workspace:*",
+    "@flowhub/storage": "workspace:*",
+    "@flowhub/webhook": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",

@@ -2,6 +2,16 @@
 
 All notable changes to the `@flowhub/*` packages are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions are per-package but released together while the toolkit is pre-1.0.
 
+## [Unreleased]
+
+### Added
+
+- `@flowhub/flowhub` — meta-package re-exporting all 15 `@flowhub/*` packages for a single-install convenience option
+
+### Changed
+
+- Added `keywords` to every package for npm discoverability
+
 ## [0.0.1] - 2026-07-23
 
 Initial release of all 15 packages.

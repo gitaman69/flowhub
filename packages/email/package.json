@@ -2,6 +2,16 @@
   "name": "@flowhub/email",
   "version": "0.0.1",
   "description": "Provider-agnostic email (Resend, SendGrid, SMTP, Mailgun, SES).",
+  "keywords": [
+    "email",
+    "smtp",
+    "transactional-email",
+    "resend",
+    "sendgrid",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

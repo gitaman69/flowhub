@@ -2,6 +2,15 @@
   "name": "@flowhub/config",
   "version": "0.0.1",
   "description": "Config loading/merging with required-key validation for FlowKit packages.",
+  "keywords": [
+    "config",
+    "configuration",
+    "env",
+    "environment-variables",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

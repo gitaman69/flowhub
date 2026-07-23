@@ -2,6 +2,15 @@
   "name": "@flowhub/cache",
   "version": "0.0.1",
   "description": "Provider-agnostic cache (Memory, Redis, LRU).",
+  "keywords": [
+    "cache",
+    "redis",
+    "in-memory-cache",
+    "ttl-cache",
+    "nodejs",
+    "typescript",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

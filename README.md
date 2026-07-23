@@ -17,6 +17,7 @@ FlowKit is 15 small, independently publishable packages — `sms`, `email`, `oau
 - [Before / After](#before--after)
 - [Why it's faster](#why-its-faster)
 - [Packages](#packages)
+- [All-in-one: @flowhub/flowhub](#all-in-one-flowhubflowhub)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [CLI](#cli)
@@ -164,14 +165,39 @@ Not "faster CPU cycles" — faster to build, faster to change, faster to recover
 | `@flowhub/webhook` | Inbound webhook signature verification | [README](packages/webhook/README.md) |
 | `@flowhub/queue` | Job queue registry (BullMQ, RabbitMQ, Redis, SQS) | [README](packages/queue/README.md) |
 | `@flowhub/cache` | Cache registry (Memory, Redis, LRU) | [README](packages/cache/README.md) |
+| `@flowhub/flowhub` | Meta-package — re-exports all 15 packages above, one install | [README](packages/flowhub/README.md) |
 
 Each README covers the full API, every method/event, and usage examples beyond what's inlined below. All packages are published to npm under the [`@flowhub`](https://www.npmjs.com/org/flowhub) org — install any of them directly, no monorepo checkout required.
 
+## All-in-one: @flowhub/flowhub
+
+Don't want to run fifteen `pnpm add` commands? [`@flowhub/flowhub`](packages/flowhub/README.md) is a meta-package that re-exports every symbol from every package above — same classes, same functions, zero API differences, just one import:
+
+```bash
+pnpm add @flowhub/flowhub
+```
+
+```ts
+import { createApp, SmsRegistry, OAuthRegistry, OtpManager, retry } from "@flowhub/flowhub";
+```
+
+is exactly equivalent to installing and importing `@flowhub/core`, `@flowhub/sms`, `@flowhub/oauth`, `@flowhub/otp`, and `@flowhub/retry` individually. Its [README](packages/flowhub/README.md) documents every re-exported class/function from all 15 packages in one place, with a full worked example (OTP-gated signup using `sms`, `otp`, `cache`, and `retry` together).
+
+Use it for prototyping or services that touch most of the toolkit. For production services using only a handful of modules, installing those directly keeps the dependency tree smaller and lets each module version independently — see the [comparison table](packages/flowhub/README.md#when-to-use-this-vs-the-individual-packages) in its README. Switching between the two later is a find-and-replace on import paths, since the exports are identical.
+
 ## Installation
+
+Install only what you need:
 
 ```bash
 pnpm add @flowhub/core @flowhub/sms @flowhub/oauth
 # or npm / yarn
+```
+
+Or grab everything in one package — see [`@flowhub/flowhub`](packages/flowhub/README.md#when-to-use-this-vs-the-individual-packages) for the tradeoff:
+
+```bash
+pnpm add @flowhub/flowhub
 ```
 
 Node.js 20+ required.
@@ -314,7 +340,7 @@ await cache.get("memory").set("key", "value", 60_000);
 
 ```text
 flowkit/
-  packages/       # 15 publishable @flowhub/* packages
+  packages/       # 15 concern packages + @flowhub/flowhub meta-package (16 total, all publishable)
   tests/          # cross-package integration flow tests (@flowhub/tests, private)
 ```
 

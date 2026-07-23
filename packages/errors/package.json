@@ -2,6 +2,13 @@
   "name": "@flowhub/errors",
   "version": "0.0.1",
   "description": "Shared error types for FlowKit packages.",
+  "keywords": [
+    "typescript",
+    "error-handling",
+    "custom-errors",
+    "nodejs",
+    "flowhub"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
