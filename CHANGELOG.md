@@ -2,6 +2,12 @@
 
 All notable changes to the `@flowhub/*` packages are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions are per-package but released together while the toolkit is pre-1.0.
 
+## [0.0.4] - 2026-07-23 (@flowhub/otp only)
+
+### Fixed
+
+- `@flowhub/otp` — resend cooldown was tracked on the same entry `verify()` deletes on success (or lazily deletes on expiry-check), so a successful `verify()` silently reset the cooldown timer. A caller could `generate()` → `verify()` (success) → `generate()` again instantly, bypassing the rate limit meant to throttle SMS/email sends. Cooldown timestamps now live independently of the OTP entry and survive both successful verification and lazy expiry cleanup. Found by cross-checking all 16 published packages against real installs after the `@flowhub/cli` fix below.
+
 ## [0.0.3] - 2026-07-23
 
 ### Fixed

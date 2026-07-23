@@ -47,4 +47,23 @@ describe("OtpManager", () => {
     time += 30_001;
     expect(() => otp.generate("user-1")).not.toThrow();
   });
+
+  it("cooldown survives a successful verify — resend still blocked within the window", () => {
+    let time = 0;
+    const otp = new OtpManager({ now: () => time, cooldownMs: 30_000 });
+    const code = otp.generate("user-1");
+    expect(otp.verify("user-1", code)).toBe(true);
+    time += 1000; // still well inside the 30s cooldown
+    expect(() => otp.generate("user-1")).toThrow(CooldownError);
+  });
+
+  it("cooldown survives an expired code being lazily deleted by verify", () => {
+    let time = 0;
+    const otp = new OtpManager({ now: () => time, ttlMs: 1000, cooldownMs: 30_000 });
+    const code = otp.generate("user-1");
+    time += 1001; // code expires
+    expect(otp.verify("user-1", code)).toBe(false); // triggers lazy deletion of the entry
+    // cooldown (30s from generate) has not elapsed yet
+    expect(() => otp.generate("user-1")).toThrow(CooldownError);
+  });
 });

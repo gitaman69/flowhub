@@ -1,6 +1,6 @@
 {
   "name": "@flowhub/otp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "OTP generation, verification, expiry, resend, and cooldown.",
   "keywords": [
     "otp",

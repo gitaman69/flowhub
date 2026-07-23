@@ -8,7 +8,6 @@ export interface OtpManagerOptions {
 interface OtpEntry {
   code: string;
   expiresAt: number;
-  lastSentAt: number;
 }
 
 export class CooldownError extends Error {
@@ -20,6 +19,7 @@ export class CooldownError extends Error {
 
 export class OtpManager {
   private entries = new Map<string, OtpEntry>();
+  private lastSentAt = new Map<string, number>();
   private readonly length: number;
   private readonly ttlMs: number;
   private readonly cooldownMs: number;
@@ -33,15 +33,16 @@ export class OtpManager {
   }
 
   generate(identifier: string): string {
-    const existing = this.entries.get(identifier);
     const now = this.now();
-    if (existing) {
-      const elapsed = now - existing.lastSentAt;
+    const lastSent = this.lastSentAt.get(identifier);
+    if (lastSent !== undefined) {
+      const elapsed = now - lastSent;
       if (elapsed < this.cooldownMs) throw new CooldownError(this.cooldownMs - elapsed);
     }
 
     const code = randomDigits(this.length);
-    this.entries.set(identifier, { code, expiresAt: now + this.ttlMs, lastSentAt: now });
+    this.entries.set(identifier, { code, expiresAt: now + this.ttlMs });
+    this.lastSentAt.set(identifier, now);
     return code;
   }
 
