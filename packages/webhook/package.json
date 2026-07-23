@@ -1,6 +1,6 @@
 {
   "name": "@flowhub/webhook",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webhook signature verification, retries, and logging.",
   "keywords": [
     "webhook",

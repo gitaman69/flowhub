@@ -1,6 +1,6 @@
 {
   "name": "@flowhub/sms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provider-agnostic SMS (Twilio, MSG91, AWS SNS, Vonage, Textlocal).",
   "keywords": [
     "sms",

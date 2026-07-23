@@ -1,6 +1,6 @@
 {
   "name": "@flowhub/config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Config loading/merging with required-key validation for FlowKit packages.",
   "keywords": [
     "config",

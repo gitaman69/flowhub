@@ -1,6 +1,6 @@
 {
   "name": "@flowhub/express",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automatic Express route registration for FlowKit's oauth and webhook flows.",
   "keywords": [
     "express",

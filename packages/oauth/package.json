@@ -1,6 +1,6 @@
 {
   "name": "@flowhub/oauth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provider-agnostic OAuth: Google, GitHub, Microsoft. PKCE, state, refresh tokens.",
   "keywords": [
     "oauth",

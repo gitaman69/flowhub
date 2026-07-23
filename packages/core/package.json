@@ -1,6 +1,6 @@
 {
   "name": "@flowhub/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "FlowKit core: configuration, lifecycle, plugin loading, dependency injection, events.",
   "keywords": [
     "nodejs",
