@@ -1,0 +1,29 @@
+{
+  "name": "@flowhub/tests",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Cross-package integration flow tests for FlowKit.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@flowhub/cache": "workspace:*",
+    "@flowhub/cli": "workspace:*",
+    "@flowhub/core": "workspace:*",
+    "@flowhub/email": "workspace:*",
+    "@flowhub/express": "workspace:*",
+    "@flowhub/oauth": "workspace:*",
+    "@flowhub/otp": "workspace:*",
+    "@flowhub/queue": "workspace:*",
+    "@flowhub/sms": "workspace:*",
+    "@flowhub/storage": "workspace:*",
+    "@flowhub/webhook": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
