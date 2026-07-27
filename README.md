@@ -29,6 +29,7 @@ FlowKit is 15 small, independently publishable packages — `sms`, `email`, `oau
 - [Security](#security)
 - [Contributing](#contributing)
 - [Changelog](#changelog)
+- [Downloads](#downloads)
 - [License](#license)
 
 ## Try it in 60 seconds
@@ -419,6 +420,10 @@ Bug reports, provider implementations, and PRs are welcome — see [CONTRIBUTING
 ## Changelog
 
 Notable changes per release are tracked in [CHANGELOG.md](CHANGELOG.md).
+
+## Downloads
+
+Real per-package npm download stats, regenerated daily at 9:00 AM IST by [`.github/workflows/downloads-report.yml`](.github/workflows/downloads-report.yml) via the public [npm downloads API](https://api.npmjs.org/downloads/point/last-week/@flowhub/core) — see [DOWNLOADS.md](DOWNLOADS.md) for the latest snapshot, or [reports/downloads](reports/downloads) for history. Run it yourself with `pnpm report:downloads`.
 
 ## License
 

@@ -20,7 +20,8 @@
     "build": "pnpm -r run build",
     "test": "pnpm -r run test && pnpm run test:integration",
     "test:integration": "pnpm --filter @flowhub/tests run test",
-    "typecheck": "pnpm -r run typecheck"
+    "typecheck": "pnpm -r run typecheck",
+    "report:downloads": "node scripts/npm-downloads-report.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
