@@ -1,6 +1,6 @@
 # 📊 Flow Hub — Weekly Downloads Report
 
-_Generated 2026-10-20 08:45:43 UTC · Week of **2026-10-13** to **2026-10-19**, compared against **2026-10-06** to **2026-10-12**_
+_Generated 2026-10-21 08:46:05 UTC · Week of **2026-10-14** to **2026-10-20**, compared against **2026-10-07** to **2026-10-13**_
 
 ## Summary
 
