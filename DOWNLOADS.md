@@ -1,34 +1,34 @@
 # 📊 Flow Hub — Weekly Downloads Report
 
-_Generated 2026-10-29 10:16:49 UTC · Week of **2026-10-22** to **2026-10-28**, compared against **2026-10-15** to **2026-10-21**_
+_Generated 2026-10-30 10:18:44 UTC · Week of **2026-10-23** to **2026-10-29**, compared against **2026-10-16** to **2026-10-22**_
 
 ## Summary
 
-- **Total downloads (7d):** 79 (▲ 17.9% vs previous week)
+- **Total downloads (7d):** 60 (▼ 32.6% vs previous week)
 - **Packages tracked:** 16
-- **🏆 Top package:** `@flowhub/cli` — 13 downloads
-- **🚀 Fastest growing:** `@flowhub/cli` — ▲ 1200.0%
+- **🏆 Top package:** `@flowhub/config` — 9 downloads
+- **🚀 Fastest growing:** `@flowhub/config` — ▲ 125.0%
 
 ## Package Breakdown
 
 | Rank | Package | Version | Downloads (7d) | Previous week | Change |
 |---|---|---|---|---|---|
-| 🥇 | [`@flowhub/cli`](https://www.npmjs.com/package/@flowhub/cli) | 0.0.3 | 13 | 1 | ▲ 1200.0% |
-| 🥈 | [`@flowhub/config`](https://www.npmjs.com/package/@flowhub/config) | 0.0.2 | 10 | 2 | ▲ 400.0% |
-| 🥉 | [`@flowhub/email`](https://www.npmjs.com/package/@flowhub/email) | 0.0.2 | 7 | 3 | ▲ 133.3% |
-| 4 | [`@flowhub/oauth`](https://www.npmjs.com/package/@flowhub/oauth) | 0.0.2 | 5 | 3 | ▲ 66.7% |
-| 5 | [`@flowhub/otp`](https://www.npmjs.com/package/@flowhub/otp) | 0.0.3 | 5 | 6 | ▼ 16.7% |
-| 6 | [`@flowhub/sms`](https://www.npmjs.com/package/@flowhub/sms) | 0.0.2 | 5 | 8 | ▼ 37.5% |
-| 7 | [`@flowhub/cache`](https://www.npmjs.com/package/@flowhub/cache) | 0.0.2 | 4 | 7 | ▼ 42.9% |
-| 8 | [`@flowhub/logger`](https://www.npmjs.com/package/@flowhub/logger) | 0.0.2 | 4 | 3 | ▲ 33.3% |
-| 9 | [`@flowhub/queue`](https://www.npmjs.com/package/@flowhub/queue) | 0.0.2 | 4 | 4 | ▬ 0.0% |
-| 10 | [`@flowhub/webhook`](https://www.npmjs.com/package/@flowhub/webhook) | 0.0.2 | 4 | 5 | ▼ 20.0% |
-| 11 | [`@flowhub/core`](https://www.npmjs.com/package/@flowhub/core) | 0.0.2 | 3 | 4 | ▼ 25.0% |
-| 12 | [`@flowhub/errors`](https://www.npmjs.com/package/@flowhub/errors) | 0.0.2 | 3 | 2 | ▲ 50.0% |
-| 13 | [`@flowhub/express`](https://www.npmjs.com/package/@flowhub/express) | 0.0.2 | 3 | 2 | ▲ 50.0% |
-| 14 | [`@flowhub/flowhub`](https://www.npmjs.com/package/@flowhub/flowhub) | 0.0.1 | 3 | 5 | ▼ 40.0% |
-| 15 | [`@flowhub/retry`](https://www.npmjs.com/package/@flowhub/retry) | 0.0.2 | 3 | 4 | ▼ 25.0% |
-| 16 | [`@flowhub/storage`](https://www.npmjs.com/package/@flowhub/storage) | 0.0.2 | 3 | 8 | ▼ 62.5% |
+| 🥇 | [`@flowhub/config`](https://www.npmjs.com/package/@flowhub/config) | 0.0.2 | 9 | 4 | ▲ 125.0% |
+| 🥈 | [`@flowhub/cli`](https://www.npmjs.com/package/@flowhub/cli) | 0.0.3 | 8 | 7 | ▲ 14.3% |
+| 🥉 | [`@flowhub/email`](https://www.npmjs.com/package/@flowhub/email) | 0.0.2 | 7 | 4 | ▲ 75.0% |
+| 4 | [`@flowhub/otp`](https://www.npmjs.com/package/@flowhub/otp) | 0.0.3 | 5 | 6 | ▼ 16.7% |
+| 5 | [`@flowhub/sms`](https://www.npmjs.com/package/@flowhub/sms) | 0.0.2 | 4 | 9 | ▼ 55.6% |
+| 6 | [`@flowhub/webhook`](https://www.npmjs.com/package/@flowhub/webhook) | 0.0.2 | 4 | 5 | ▼ 20.0% |
+| 7 | [`@flowhub/cache`](https://www.npmjs.com/package/@flowhub/cache) | 0.0.2 | 3 | 8 | ▼ 62.5% |
+| 8 | [`@flowhub/errors`](https://www.npmjs.com/package/@flowhub/errors) | 0.0.2 | 3 | 2 | ▲ 50.0% |
+| 9 | [`@flowhub/logger`](https://www.npmjs.com/package/@flowhub/logger) | 0.0.2 | 3 | 4 | ▼ 25.0% |
+| 10 | [`@flowhub/queue`](https://www.npmjs.com/package/@flowhub/queue) | 0.0.2 | 3 | 5 | ▼ 40.0% |
+| 11 | [`@flowhub/retry`](https://www.npmjs.com/package/@flowhub/retry) | 0.0.2 | 3 | 4 | ▼ 25.0% |
+| 12 | [`@flowhub/core`](https://www.npmjs.com/package/@flowhub/core) | 0.0.2 | 2 | 5 | ▼ 60.0% |
+| 13 | [`@flowhub/express`](https://www.npmjs.com/package/@flowhub/express) | 0.0.2 | 2 | 3 | ▼ 33.3% |
+| 14 | [`@flowhub/storage`](https://www.npmjs.com/package/@flowhub/storage) | 0.0.2 | 2 | 9 | ▼ 77.8% |
+| 15 | [`@flowhub/flowhub`](https://www.npmjs.com/package/@flowhub/flowhub) | 0.0.1 | 1 | 7 | ▼ 85.7% |
+| 16 | [`@flowhub/oauth`](https://www.npmjs.com/package/@flowhub/oauth) | 0.0.2 | 1 | 7 | ▼ 85.7% |
 
 ## Links
 
